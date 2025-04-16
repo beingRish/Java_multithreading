@@ -1,0 +1,35 @@
+Java provides robust support for multithreading, allowing developers to create applications
+that can perform multiple tasks simultaneously, improving performance and responsiveness.
+
+In Java, multithreading is the concurrent execution of two or more threads to maximize the utilization of the CUP.
+Java's multithreading capabilities are part of the java.lang package, making it easy to implement concurrent execution.
+
+In a single-core environment, Java's multithreading is managed by the JVM and the OS,
+which switch between threads to give the illusion of concurrency.
+
+The threads share the single core, and time-slicing is used to manage thread execution.
+
+In a multi-core environment, Java's multithreading can take full advantage of the available cores.
+
+The JVM can distribute threads across multiple cores, allowing true parallel execution of threads.
+
+A thread is a lightweight process, the smallest unit of processing.
+Java supports multithreading through its java.lang.Thread class and the java.lang.Runnable interface.
+
+When a Java program starts, one thread begins running immediately, which is called the main thread.
+This thread is responsible for executing the main method of a program.
+
+To create a new thread in Java, you can either extend the Thread class or implement the Runnable interface.
+
+extend the Thread class:
+-> A new class World is created that extends Thread.
+-> The run method is overridden to define the code that constitutes the new thread.
+-> start method is called to initiate the new thread.
+
+implement the Runnable interface:
+-> A new class World is created that implements Runnable.
+-> The run method is overridden to define the code that constitutes the new thread.
+-> A Thread object is created by passing an instance of MyRunnable.
+-> start method is called on the Thread object to initiate the new thread.
+
+In both cases, the run method contains the code that will be executed in the new thread.
