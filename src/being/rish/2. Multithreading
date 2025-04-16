@@ -1,0 +1,57 @@
+Multithreading refers to the ability to execute multiple threads within a single process concurrently.
+
+Example: A web browser can use multithreading by having separate threads for rendering the page,
+running JavaScript, and managing user inputs. This makes the browser more responsive and efficient.
+
+Multithreading enhances the efficiency of multitasking by breaking down individual tasks into smaller sub-tasks or threads.
+These threads can be processed simultaneously, making better use of the CPU's capabilities.
+
+In a single-core system:
+Both threads and processes are managed by the OS scheduler through time slicing and
+context switching to create illusion of simultaneous execution.
+
+In a multi-core system:
+Both threads and processes can run in true parallel on different cores,
+with the OS scheduler distributing tasks across the cores to optimize performance.
+
+Time Slicing:
+-> Definition: Time slicing divides CPU time into small intervals called time slices or quanta.
+-> Function: The OS scheduler allocates these time slices to different processes
+                and threads ensuring each gets a fair share of CPU time.
+-> Purpose: This prevents any single process or thread from monopolizing the CPU,
+                improving responsiveness and enabling concurrent execution.
+
+Context Switching:
+-> Definition: Context switching is the process of saving the state of a currently running process
+                or thread and loading the state of the next one to be executed.
+-> Function: When a process or thread's time slice expires, the OS scheduler performs a context switch
+                to more the CPU's focus to another process or thread.
+-> Purpose: This allows multiple processes and threads to share the CPU, giving the appearance of
+                simultaneous execution on a single-core CPU or improving parallelism on multi-core CPUs.
+
+Multitasking can be achieved through multithreading where each task is divided
+into threads that are managed concurrently.
+
+While multitasking typically refers to the running of multiple applications,
+multithreading is more granular, dealing with multiple threads within the same application or process.
+
+Multitasking operates at the level of processes, which are the OS's primary units of execution.
+Multithreading operates at the level of threads, which are smaller units within a process.
+
+Multitasking involves managing resources between completely separate programs,
+which may have independent memory spaces and system resources.
+
+Multithreading involves managing resources within a single program,
+where threads share the same memory and resources.
+
+Multitasking allows us to run multiple applications simultaneously,
+improving productivity and system utilization.
+
+Multithreading allows a single application to perform multiple tasks at the same time,
+improving application performance and responsiveness.
+
+The office manager(OS) assigns different employees(process) to work on different projects(application) simultaneously.
+Each employee works on a different project independently.
+
+Within a single project(application), a team(process) of employees(threads) work on different parts of the project
+at the same time, collaborating and sharing resources.

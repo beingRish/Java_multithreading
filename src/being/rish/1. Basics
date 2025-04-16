@@ -1,0 +1,36 @@
+The CPU, often referred to as the brain of the computer, is responsible for executing instructions from programs.
+It performs basic arithmetic, logic, control, and input/output operations specified by the instructions.
+Example: A modern CUP like the Intel Core i7 or AMD Ryzen 7
+
+Core: A core is an individual processing unit within a CUP.
+Modern CPUs can have multiple cores, allowing them to perform multiple tasks simultaneously.
+
+A quad-core processor has for cores, allowing it to perform four tasks simultaneously.
+For instance, one core could handle your web browser, another your music player,
+another a download manager, and another a background system update.
+
+Program:
+A program is a set of instructions written in a programming language that tells the computer how to perform a specific task.
+Microsoft word is a program that allows users to create and edit documents.
+
+Process:
+A process is an instance of a program that is being executed.
+When a program runs, the OS creates a process to manage its execution.
+When we open Microsoft Word, it becomes a process in the Operating System.
+
+Thread:
+A thread is the smallest unit of execution within a process.
+A process can have multiple threads, which share the same resources but can run independently.
+A web browser like Google Chrome might use multiple threads for different tabs, with each tab running as a separate thread.
+
+Multitasking:
+Multitasking allows an OS to run multiple processes simultaneously.
+On single-core CPUs, this is done through time-sharing, rapidly switching between tasks.
+On multi-core CPUs, this is done through time-sharing, rapidly switching between tasks.
+On multi-core CPUs, true parallel execution occurs, with tasks distributed across cores.
+The OS scheduler balances the load, ensuring efficient and responsive system performance.
+Example: We are browsing the internet while listening to music and downloading a file.
+
+Multitasking utilizes the capabilities of a CPU and its cores.
+When an OS performs multitasking, it can assign different tasks to different cores.
+This is more efficient than assigning all tasks to a single core.
