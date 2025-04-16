@@ -1,0 +1,3 @@
+When One class extends the other class then implements Runnable Interface.
+because Multi-level inheritance not supported in Java
+so how can we extends Thread class when the other class is already being extend.
