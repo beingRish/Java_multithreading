@@ -1,0 +1,7 @@
+Thread Pool:
+Collection of pre-initialised threads that are ready to perform a task.
+
+why?
+1. Resource management
+2. Response time
+3. Control over Thread Count
