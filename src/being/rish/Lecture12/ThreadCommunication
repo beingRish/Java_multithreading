@@ -1,0 +1,10 @@
+In a multithreaded environment, threads often need to communicate and
+coordinate with each other to accomplish a task.
+
+Without proper communication mechanisms, threads might end up in inefficient
+busy-waiting states, leading to wastage of CPU resources and potential deadlocks.
+
+Methods introduce to thread communication:
+wait
+notify
+notifyAll
